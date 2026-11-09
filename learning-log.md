@@ -5,11 +5,13 @@ Goal: track my progress and show consistency over time.
 
 ---
 
-### Nov 9, 2026 — TryHackMe: Intro to Defensive Security
-Completed my first defensive security room. On a security dashboard (Security Hub) I spotted a critical alert,
-investigated the pages the attacker tried to reach (admin / login / backup), and found the most recent attempt was `/admin`.
-I then responded: blocked the attacker's IP address and deployed protective controls.
-The threat was stopped before it reached anything sensitive.
+### Nov 9, 2026 — TryHackMe: Windows Fundamentals
+Explored a Windows Server 2019 workstation: navigated the desktop, taskbar and Start menu, checked system/device
+info in Settings, managed files with File Explorer, used Task Manager to view users and processes, and ran a
+custom scan in Windows Security. The scan flagged an EICAR test file; I traced it through Protection history to
+its full path (...\NewHireDocs\tryhatmemaldoc.txt). Finished the room 100%.
 
-**What I learned:** the detect → investigate → respond workflow, and the idea of layered defense
-(block first, then harden the system).
+**Next:** Linux CLI Basics & Windows CLI Basics — moving from the graphical interface to the command line.
+
+**What I learned:** Windows navigation and system tools, and how an antivirus detects, quarantines and logs a
+threat — including finding a detected file's exact path, which is core to investigating a host.
